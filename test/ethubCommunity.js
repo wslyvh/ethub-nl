@@ -27,7 +27,9 @@ contract('EthubCommunity', function(accounts) {
     beforeEach("should deploy a new Community", function() {
 
         return EthubCommunity.new({ from: owner })
-            .then(instance => community = instance);
+            .then(instance => community = instance)
+            .then(() => community.getTokenAddress())
+            .then(tokenAddress => token = tokenAddress);
     });
         
     describe("Community members", function() {

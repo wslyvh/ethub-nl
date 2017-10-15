@@ -42,6 +42,10 @@ contract EthubCommunity is Claimable, CanReclaimToken {
         returns (uint count) { 
             return memberIndex.length;
     }
+    
+    function getTokenAddress() constant returns (address tokenAddress) {
+        return token;
+    }
 
     // reclaim all available funds
     function reclaimBalance() external onlyOwner {
