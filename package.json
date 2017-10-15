@@ -1,0 +1,24 @@
+{
+  "name": "ethub-nl",
+  "version": "1.0.0",
+  "description": "Ethub NL Community project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wslyvh",
+  "license": "MIT",
+  "devDependencies": {
+    "create-html": "^3.1.0",
+    "file-loader": "^0.11.2",
+    "truffle": "^3.4.11",
+    "webpack": "^3.5.5"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "ethereumjs-testrpc": "^4.1.3",
+    "truffle-contract": "^3.0.0",
+    "web3": "^0.20.1",
+    "zeppelin-solidity": "^1.3.0"
+  }
+}
