@@ -48,6 +48,19 @@ contract('EthubCommunity', function(accounts) {
                 })
                 .then(tx => { 
                     assert.strictEqual(tx.toNumber(), 1);
+
+                    return community.claimCommunityToken({ from: member2 });
+                }).then(tx => {
+                    assert.strictEqual(tx.logs.length, 1);
+                    assert.strictEqual(tx.receipt.logs.length, 3);
+                    
+                    const logTokenClaimed = tx.logs[0];
+                    assert.strictEqual(logTokenClaimed.event, "TokenClaimed");
+
+                    return community.getMemberCount();
+                })
+                .then(tx => { 
+                    assert.strictEqual(tx.toNumber(), 2);
                 })
         });
     });

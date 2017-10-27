@@ -35,6 +35,8 @@ contract EthubCommunity is Claimable, CanReclaimToken {
         return true;
     }
     
+    function() payable { }
+
     // get the count of members that claimed a recognition token
     function getMemberCount() 
         constant
