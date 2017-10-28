@@ -237,11 +237,6 @@ contract MintableToken is StandardToken, Ownable {
   }
 }
 
-contract EthubToken is MintableToken {
-  string public name = "Ethub NL";
-  string public symbol = "ENL";
-}
-
 contract CanReclaimToken is Ownable {
   using SafeERC20 for ERC20Basic;
 
@@ -283,6 +278,11 @@ contract Claimable is Ownable {
     owner = pendingOwner;
     pendingOwner = 0x0;
   }
+}
+
+contract EthubToken is MintableToken {
+  string public name = "Ethub NL";
+  string public symbol = "ENL";
 }
 
 contract EthubCommunity is Claimable, CanReclaimToken {

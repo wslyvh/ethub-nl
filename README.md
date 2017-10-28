@@ -16,6 +16,6 @@ Please make sure to use the correct contract and token addresses. For full discl
 ## Note
 
 * Don't send Ether with your transaction. You only pay for the gas.
-* Set the Gas limit to 135.000 and Gas Price to 10 Gwei (approx. $0.40 usd)
+* Set the Gas limit to 135.000 and Gas price to 10 Gwei (approx. $0.40 usd)
 * You can only request a token once.
-* Don’t use an exchange wallet
+* Don't use an exchange wallet
