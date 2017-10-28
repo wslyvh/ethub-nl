@@ -9,9 +9,9 @@ The community recognition tokens ('ENL') represent no value and are only to show
 
 Please make sure to use the correct contract and token addresses. For full disclosure, all source-code is open source and available for review. 
 
-* [Request your token]()
-* [Community contract]()
-* [Token address]()
+* [Request your token](http://token.ethub.nl/)
+* [Community contract](https://etherscan.io/address/0xe75714efedd9e1590bdf6cb73235aab8c0b9300e)
+* [Token address](https://etherscan.io/token/0x5921e194091144688b13196c6a019f62c673fc19)
 
 ## Note
 
